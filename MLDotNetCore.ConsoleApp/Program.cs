@@ -43,6 +43,15 @@ AdoDotNetExample adoDotNetExample= new AdoDotNetExample();
 // let's call the Read function from AdoDotNetExample as a method
 // adoDotNetExample.Read();
 
-adoDotNetExample.Create("title", "author", "content");
+// Creating new data
+//adoDotNetExample.Create("title", "author", "content");
+
+// Updating existing data
+// adoDotNetExample.Update(6, "title", "taaest", "content");
+
+// Deleting by id
+// adoDotNetExample.Delete(10);
+adoDotNetExample.Edit(1);
+adoDotNetExample.Edit(3);
 
 Console.ReadLine();
