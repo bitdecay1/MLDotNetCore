@@ -103,7 +103,6 @@ namespace MLDotNetCore.ConsoleApp
             connection.Close();
             string message = result > 0 ? "Saving Successful" : "Saving Failed";
             Console.WriteLine(message);
-
         }
 
         public void Update(int id, string title, string author, string content)
