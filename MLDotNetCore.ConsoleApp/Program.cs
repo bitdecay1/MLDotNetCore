@@ -1,10 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using MLDotNetCore.ConsoleApp;
 using System.Data;
 using System.Data.SqlClient;
 
 Console.WriteLine("Hello, World!");
 
-SqlConnectionStringBuilder stringBuilder = new SqlConnectionStringBuilder();
+/*SqlConnectionStringBuilder stringBuilder = new SqlConnectionStringBuilder();
 stringBuilder.DataSource = "DESKTOP-8DIOOI6"; // server name
 stringBuilder.InitialCatalog = "DotNetTrainingBatch4"; // database name
 stringBuilder.UserID = "sa"; // database credential
@@ -32,9 +33,16 @@ foreach (DataRow dr in dt.Rows)
     Console.WriteLine("Blog Author => " + dr["BlogAuthor"]);
     Console.WriteLine("Blog Content => " + dr["BlogContent"]);
     Console.WriteLine("---------------------");
-}
+}*/
 
 // Ado.Net Read
 // CRUD
+
+// using above code in a method.
+AdoDotNetExample adoDotNetExample= new AdoDotNetExample();
+// let's call the Read function from AdoDotNetExample as a method
+// adoDotNetExample.Read();
+
+adoDotNetExample.Create("title", "author", "content");
 
 Console.ReadLine();
